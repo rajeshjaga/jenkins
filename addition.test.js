@@ -64,9 +64,9 @@ function runTests() {
         assertThrows(() => add('abc', 2), 'Invalid string input');
     });
 
-    // test('throws error for null input', () => {
-    //     assertThrows(() => add(null, 2), 'Null input');
-    // });
+    test('throws error for null input', () => {
+        assertThrows(() => add(null, 2), 'Null input');
+    });
 
     // Summary
     console.log('\n--- Test Results ---');
