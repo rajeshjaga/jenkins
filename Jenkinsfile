@@ -17,7 +17,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running unit tests'
-                pwsh 'node addition.test.js'
+                sh 'node addition.test.js'
             }
         }
     }
