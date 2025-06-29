@@ -1,33 +1,13 @@
 {
-  "name": "jenkins-demo-project",
+  "name": "simple-addition-app",
   "version": "1.0.0",
-  "description": "Complete Jenkins CI/CD demonstration project",
-  "main": "app.js",
+  "description": "Simple JavaScript addition program with tests",
+  "main": "addition.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
-    "test": "jest --verbose --coverage",
-    "test:watch": "jest --watch",
-    "lint": "eslint *.js",
-    "lint:fix": "eslint *.js --fix",
-    "build": "echo 'Build process completed successfully' && npm run lint",
-    "prebuild": "echo 'Running pre-build checks...'",
-    "postbuild": "echo 'Post-build tasks completed'"
+    "test": "node addition.test.js",
+    "start": "node addition.js"
   },
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "jest": "^29.5.0",
-    "supertest": "^6.3.3",
-    "nodemon": "^3.0.1",
-    "eslint": "^8.42.0"
-  },
-  "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6.0.0"
-  },
-  "keywords": ["jenkins", "ci-cd", "demo", "nodejs", "express"],
-  "author": "Demo User",
+  "keywords": ["javascript", "testing", "addition"],
+  "author": "Your Name",
   "license": "MIT"
 }
